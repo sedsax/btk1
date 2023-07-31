@@ -107,7 +107,7 @@ class _Egitim5State extends State<Egitim5> {
                         );
                        }
                         if(questionNumber != myQuestions.length){
-                        questionNumber++;
+                         questionNumber == (myQuestions.length-1) ? questionNumber=0 : questionNumber++;
                        }
                       });
                     },
