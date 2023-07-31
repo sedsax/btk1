@@ -15,7 +15,7 @@ class PianoApp extends StatelessWidget {
           backgroundColor: Colors.black,
           body: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
+            children: const [
               PianoButton(),
               PianoButton(),
               PianoButton(),
