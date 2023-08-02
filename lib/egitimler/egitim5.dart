@@ -42,7 +42,7 @@ class _Egitim5State extends State<Egitim5> {
                   child: Container(
                       child: Text(
                     myQuestions[questionNumber],
-                    style: TextStyle(color: Colors.white, fontSize: 26),
+                    style: const TextStyle(color: Colors.white, fontSize: 26),
                   )),
                 ),
               ),
@@ -57,14 +57,14 @@ class _Egitim5State extends State<Egitim5> {
                       setState(() {
                        if(myAnswers[questionNumber] == true){
                         myIcons.add(
-                          Icon(
+                          const Icon(
                             Icons.check,
                             color: Colors.green,
                           ),
                         );
                        }else{
                          myIcons.add(
-                          Icon(
+                          const Icon(
                             Icons.close,
                             color: Colors.red,
                           ),
@@ -93,14 +93,14 @@ class _Egitim5State extends State<Egitim5> {
                        setState(() {
                        if(myAnswers[questionNumber] == false){
                         myIcons.add(
-                          Icon(
+                          const Icon(
                             Icons.check,
                             color: Colors.green,
                           ),
                         );
                        }else{
                          myIcons.add(
-                          Icon(
+                          const Icon(
                             Icons.close,
                             color: Colors.red,
                           ),
