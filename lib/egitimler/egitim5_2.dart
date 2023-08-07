@@ -127,9 +127,8 @@ class _EgitimQuizState extends State<EgitimQuiz> {
                   padding: const EdgeInsets.all(10.0),
                   child: TextButton(
                     onPressed: () {
-                      soruCevap.length-1 == questionIndex ? DialogExample() : //dialog çıkmıyo
-                      setState(() {
-                        if (soruCevap[questionIndex].questionAnswer == true) {
+                     setState(() {
+                         if (soruCevap[questionIndex].questionAnswer == true) {
                           icons.add(const Icon(
                             Icons.check,
                             color: Colors.green,
@@ -143,13 +142,14 @@ class _EgitimQuizState extends State<EgitimQuiz> {
                           falseNum++;
                         }
                         questionIndex++;
-                      });
+                       }
+                     );
                       },
                     style: TextButton.styleFrom(
                         backgroundColor: Colors.green,
                         foregroundColor: Colors.white),
                     child: const Text(
-                      "Ture",
+                      "Doğru",
                       style: TextStyle(fontSize: 24),
                     ),
                   ),
@@ -175,16 +175,14 @@ class _EgitimQuizState extends State<EgitimQuiz> {
                           ));
                           falseNum++;
                         }
-                        soruCevap.length - 1 == questionIndex
-                            ? questionIndex = 0
-                            : questionIndex++;
+                        questionIndex++;
                       });
                     },
                     style: TextButton.styleFrom(
                         backgroundColor: Colors.red,
                         foregroundColor: Colors.white),
                     child: const Text(
-                      "False",
+                      "Yanlış",
                       style: TextStyle(fontSize: 24),
                     ),
                   ),
