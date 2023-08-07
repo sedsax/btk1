@@ -1,8 +1,12 @@
 import 'package:btk1/egitimler/home.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 void main() {
-  runApp(MaterialApp(home: Egitim7(),));
+  runApp(const MaterialApp(
+    debugShowCheckedModeBanner: false,
+    home: Egitim7(),
+  ));
 }
 
 class Egitim7 extends StatelessWidget {
@@ -10,6 +14,7 @@ class Egitim7 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Home();
+    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(statusBarColor: Colors.transparent));
+    return const Home();
   }
 }
